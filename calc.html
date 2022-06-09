@@ -1,0 +1,32 @@
+<body>
+  <div class="calc-grid">
+    <!--create a two tier screen to display the contents of the calculator in two screen layers-->
+    <div class="output">
+      <input type="text" placeholder="0" id="output">
+      <div data-previous-operand class="previous-operand"></div>
+      <div data-current-operand class="current-operand"></div>
+    </div>
+    <button data-all-clear class="span-two">AC</button>
+    <button onclick="Clear()">CL</button>
+    <button onclick="del()">DEL</button>
+    <button onclick="display('/')">/</button>
+    <button onclick="display('1')">1</button>
+    <button onclick="display('2')">2</button>
+    <button onclick="display('3')">3</button>
+    <button onclick="display('*')">*</button>
+    <button onclick="display('4')">4</button>
+    <button onclick="display('5')">5</button>
+    <button onclick="display('6')">6</button>
+    <button onclick="display('-')">-</button>
+    <button onclick="display('7')">7</button>
+    <button onclick="display('8')">8</button>
+    <button onclick="display('9')">9</button>
+    <button onclick="display('+')">+</button>
+    <button onclick="display('.')">.</button>
+    <button onclick="display ('(')">(</button>
+    <button onclick="display('0')">0</button>
+    <button onclick="display(')')">)</button>
+    <button onclick="Calculate()" class="equal">=</button>
+  </div>
+  <script src="prime.js"></script>
+</body>
